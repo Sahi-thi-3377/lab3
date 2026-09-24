@@ -9,11 +9,12 @@ from app import sum_list, count_negatives
 ])
 def test_sum_list(numbers, expected):
     assert sum_list(numbers) == expected
-
 @pytest.mark.parametrize("numbers, expected", [
-    ([], 0),                  
-    ([1, 2, 3], 0),           
-    ([-1, -2, 3, -4], 3)      
+    ([], 0),
+    ([1, 2, 3], 0),
+    ([-1, -2, 3, -4], 3),
+    ([-5, -10], 99)  
 ])
 def test_count_negatives(numbers, expected):
     assert count_negatives(numbers) == expected
+
