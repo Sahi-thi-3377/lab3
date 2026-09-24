@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Sahi-thi-3377/sa.git'
+                git branch: 'main', url: 'https://github.com/Sahi-thi-3377/lab3.git'
             }
         }
         stage('Install Dependencies') {
